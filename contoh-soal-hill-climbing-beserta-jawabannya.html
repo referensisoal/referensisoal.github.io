@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Soal Hill Climbing Beserta Jawabannya - BELAJAR</title>
+    <meta name="description" content="Contoh Soal Hill Climbing Beserta Jawabannya, , , , , , , 0, , , , , , 0, contoh-soal-hill-climbing-beserta-jawabannya, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Soal Hill Climbing Beserta Jawabannya - BELAJAR" />
+    <meta property="og:description" content="Contoh Soal Hill Climbing Beserta Jawabannya, , , , , , , 0, , , , , , 0, contoh-soal-hill-climbing-beserta-jawabannya, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Soal Hill Climbing Beserta Jawabannya - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Soal Hill Climbing Beserta Jawabannya, , , , , , , 0, , , , , , 0, contoh-soal-hill-climbing-beserta-jawabannya, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://referensisoal.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://referensisoal.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://referensisoal.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://referensisoal.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://referensisoal.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://referensisoal.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://referensisoal.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://referensisoal.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://referensisoal.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://referensisoal.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Soal Hill Climbing Beserta Jawabannya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">nazhifchan23</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Soal+Hill+Climbing+Beserta+Jawabannya" alt="Contoh Soal Hill Climbing Beserta Jawabannya">
+                    </div>
+                    <p></p>
+                    <p>Tentukanlah lintasan terpendek dari A ke O pada graf berikut dengan menggunakan simple hill climbing:​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukanlah-lintasan-terpendek-dari-a-ke-o-pada-graf-berikut-dengan-menggunakan-simple-hill-climbing%e2%80%8b">1.
+                                            Tentukanlah lintasan terpendek dari A ke O pada graf berikut dengan menggunakan simple hill climbing:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-pengertian-sosial-climbing-dan-sinking-beserta-contohnya">2.
+                                            tuliskan pengertian sosial climbing dan sinking beserta contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-dari-sosial-climbing-beserta-contoh-nya">3.
+                                            Jelaskan pengertian Dari sosial climbing beserta contoh nya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#seorang-karyawan-korban-phkkarena-perusahaan-mengalamikesulitan-keuangan-merupakancontoh-mobilitas-sosiala-vertikal-climbingb-horizontal-climbingc-sosial-sinkingd-sosial-climbing%e2%80%8b">4.
+                                            Seorang karyawan korban PHKkarena perusahaan mengalamikesulitan keuangan merupakancontoh mobilitas sosialA.vertikal climbingB.Horizontal climbingC.sosial sinkingD.sosial climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-bentuk-mobilitas-sosial-vertikal-naik-sosial-climbing-beserta-contohnya">5.
+                                            2 bentuk mobilitas sosial vertikal naik sosial climbing beserta contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-sosial-sinking-dan-sosial-climbingbeserta-contoh-ya%e2%80%8b">6.
+                                            jelaskan perbedaan sosial sinking dan sosial climbing,beserta contoh ya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-mobilitas-sosial-climbing%e2%80%8b">7.
+                                            contoh mobilitas sosial climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-contoh-social-climbing-5">8.
+                                            sebutkan contoh social climbing (5) :) </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-mobilitas-vertikal-climbing%e2%80%8b">9.
+                                            contoh mobilitas vertikal climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbingsocial-singking">10.
+                                            contoh social climbing/social singking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing%e2%80%8b">11.
+                                            contoh social climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing">12.
+                                            contoh social climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-antara-mobilitas-sosial-sinking-dengan-mobilitas-sosial-climbing-disertai-contohnya%e2%80%8b">13.
+                                            jelaskan Perbedaan antara Mobilitas Sosial sinking dengan mobilitas sosial climbing disertai contohnya!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-ini-yang-merupakan-contoh-social-climbing-adalah">14.
+                                            Berikut ini yang merupakan contoh social climbing adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-crita-sosial-climbing">15.
+                                            contoh crita sosial climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contohmobilitas-geografis-climbing%e2%80%8b">16.
+                                            contohmobilitas geografis climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-2-contoh-kasus-mobilitas-vertical-climbing-antargenerasi-tolong-bantu-jawab-kaksoalnya-besok-dikumpulinmakasih%e2%80%8b">17.
+                                            Berikan 2 contoh kasus mobilitas vertical climbing antargenerasi tolong bantu jawab kaksoalnya besok dikumpulinmakasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-mobilitas-sosial-climbing%e2%80%8b">18.
+                                            contoh mobilitas sosial climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berilah-3-contoh-social-climbing">19.
+                                            Berilah 3 contoh social climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-dari-sosial-climbing-beserta-contoh-nya">20.
+                                            Jelaskan pengertian Dari sosial climbing beserta contoh nya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing%e2%80%8b">21.
+                                            contoh social climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-contoh-social-climbing">22.
+                                            Apa saja contoh social climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#carilah-contoh-social-climbing">23.
+                                            carilah contoh social climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-dengan-disertai-contoh-mobilitas-sosial-naik-social-climbing-dan-mobilitas-turun-social-sinking">24.
+                                            Jelaskan perbedaan dengan disertai contoh mobilitas sosial naik social climbing dan mobilitas turun social Sinking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing%e2%80%8b">25.
+                                            contoh social climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#2-bentuk-mobilitas-sosial-vertikal-naik-sosial-climbing-beserta-contohnya">26.
+                                            2 bentuk mobilitas sosial vertikal naik sosial climbing beserta contohnya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-yang-berkaitan-dengan-mobilitas-vertikal-baik-yang-climbing-dan-sinking-dan-mobilitas-horizontal-beserta-barang-buktinya">27.
+                                            Berikan contoh yang berkaitan dengan mobilitas vertikal baik yang climbing dan sinking dan mobilitas horizontal beserta barang buktinya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing">28.
+                                            Contoh social climbing.... </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-mobilitas-sosial-vertikal-climbing%e2%80%8b">29.
+                                            contoh mobilitas sosial vertikal climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-sosial-climbing-dan-sosial-sinking">30.
+                                            Contoh sosial climbing dan sosial sinking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-contoh-social-climbing-dan-social-sinking-beserta-namanyamasing-masing-disebutkan-5-contohnya">31.
+                                            sebutkan contoh social climbing dan social sinking beserta namanya?masing masing disebutkan 5 contohnya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-5-contoh-sosial-climbing-dan-sinkingtolong-di-jawab">32.
+                                            berikan 5 contoh sosial climbing dan sinking#tolong di jawab</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing-dan-social-singking%e2%80%8b">33.
+                                            contoh social climbing dan social singking​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing-dan-faktornya%e2%80%8b">34.
+                                            contoh social climbing dan faktornya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-contoh-sosial-climbing%e2%80%8b">35.
+                                            sebutkan contoh sosial climbing​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-terjadinya-sosial-climbing">36.
+                                            Contoh terjadinya sosial climbing </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-sosial-climbing-dan-sosial-sinking">37.
+                                            Contoh sosial climbing dan sosial sinking</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-social-climbing-dari-faktor-struktural%e2%80%8b">38.
+                                            Contoh social climbing dari Faktor Struktural​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-mobilitas-climbing">39.
+                                            Contoh kasus mobilitas climbing</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soaljelaskan-perbedaan-sosial-climbing-dan-sosial-sinking-berikan-masing-masing-contohnya">40.
+                                            SOAL:
+Jelaskan perbedaan sosial climbing dan sosial sinking? Berikan masing-masing contohnya!</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="tentukanlah-lintasan-terpendek-dari-a-ke-o-pada-graf-berikut-dengan-menggunakan-simple-hill-climbing%e2%80%8b">
+                            1. Tentukanlah lintasan terpendek dari A ke O pada graf berikut dengan menggunakan simple hill climbing:​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jalur Terpendek: ['A', 'B', 'E', 'H', 'K', 'L', 'O']</p><p></p><p><strong>Penjelasan:</strong></p><p>def hill_climbing(graph, start, goal):</p><p>    current_node = start</p><p>    path = [current_node]</p><p>    visited = set()</p><p></p><p>    while current_node != goal:</p><p>        neighbors = graph[current_node]</p><p>        best_distance = float('inf')</p><p>        best_node = None</p><p></p><p>        for neighbor, distance in neighbors.items():</p><p>            if distance &lt; best_distance and neighbor not in visited:</p><p>                best_distance = distance</p><p>                best_node = neighbor</p><p></p><p>        if best_node is None:</p><p>            break</p><p></p><p>        visited.add(current_node)</p><p>        current_node = best_node</p><p>        path.append(current_node)</p><p></p><p>    return path</p><p></p><p># ubah grafik kalo ada yang salah</p><p>graph = {</p><p>    'A': {'B': 20, 'C': 30, 'D': 40},</p><p>    'B': {'E': 40, 'A': 20},</p><p>    'C': {'E': 20, 'D': 45},</p><p>    'D': {'F': 40},</p><p>    'E': {'F': 55, 'G': 35, 'H': 30},</p><p>    'F': {'I': 30},</p><p>    'G': {'H': 35, 'K': 30},</p><p>    'I': {'H': 40, 'J': 20, 'M': 30},</p><p>    'M': {'N': 20},</p><p>    'J': {'K': 40, 'N': 30},</p><p>    'K': {'L': 40},</p><p>    'N': {'L': 55, 'O': 55},</p><p>    'L': {'O': 50},</p><p>    'H': {'K': 20, 'E': 30, 'G': 35, 'I': 40},</p><p>    'O': {'L': 50, 'N': 55}</p><p>}</p><p></p><p>start_node = 'A'</p><p>goal_node = 'O'</p><p></p><p># Menemukan jalur terpendek</p><p>shortest_path = hill_climbing(graph, start_node, goal_node)</p><p>print("Shortest Path:", shortest_path)</p><p><br />Menurut kode hill_climbing diatas, jawabannya ['A', 'B', 'E', 'H', 'K', 'L', 'O']. Silahkan ubah isi nested dictionary 'graph' kalau merasa datanya kurang akurat.</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-pengertian-sosial-climbing-dan-sinking-beserta-contohnya">
+                            2. tuliskan pengertian sosial climbing dan sinking beserta contohnya</h2><br />
+                        social climbing adalah pergeseran status atau kedudukan seseorang menuju status yang lebih tinggi. Tapi, social sinking adalah perpindahan status atau kedudukan seseorang menuju status yang rendah<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-dari-sosial-climbing-beserta-contoh-nya">
+                            3. Jelaskan pengertian Dari sosial climbing beserta contoh nya</h2><br />
+                        <p>sosial climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang</p><p>contohnya: 1. guru yang diangkat sebagai kepala sekolah</p><p> 2. karyawan yang karena bekerja keras lalu menduduki jabatan meneger</p><p>3. meneger yg diangkat mjd direktur</p><p>4. ibu rumah tangga menjadi pengusaha sukses</p><p>dan lain lain, semogas membantu</p><br />
+                                            <h2 class="ez-toc-section" id="seorang-karyawan-korban-phkkarena-perusahaan-mengalamikesulitan-keuangan-merupakancontoh-mobilitas-sosiala-vertikal-climbingb-horizontal-climbingc-sosial-sinkingd-sosial-climbing%e2%80%8b">
+                            4. Seorang karyawan korban PHKkarena perusahaan mengalamikesulitan keuangan merupakancontoh mobilitas sosialA.vertikal climbingB.Horizontal climbingC.sosial sinkingD.sosial climbing​</h2><br />
+                        <p>Jawaban:Social sinking</p><p></p><p>Penjelasan:semoga membantu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="2-bentuk-mobilitas-sosial-vertikal-naik-sosial-climbing-beserta-contohnya">
+                            5. 2 bentuk mobilitas sosial vertikal naik sosial climbing beserta contohnya</h2><br />
+                        1. Seorang manajer menjadi pegawai kantor biasa<br />2. Seorang kepala sekolah menjadi guru biasa<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-sosial-sinking-dan-sosial-climbingbeserta-contoh-ya%e2%80%8b">
+                            6. jelaskan perbedaan sosial sinking dan sosial climbing,beserta contoh ya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Social climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang. Misalnya seorang camat yang diangkat menjadi bupati, seorang guru yang diangkat menjadi kepala sekolah. Social sinking adalah proses penurunan status atau kedudukan seseorang.</p><p><strong>Penjelasan:</strong></p><p>maaf kalau salah:)</p><p></p><p><strong>Jawaban:</strong></p><p>-sosial sinking adalah proses penurunan status atau kedudukan seseorang.</p><p>*contohnya:kepala sekolah SMA negeri menjadi kepala sekolah biasa</p><p>-sosial climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang.</p><p>*contohnya:seorang guru biasa di angkat menjadi kepala sekolah.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-mobilitas-sosial-climbing%e2%80%8b">
+                            7. contoh mobilitas sosial climbing​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Mobilitas sosial climbing bisa disebut juga dengan mobilitas vertikal ke atas.</p><p>Mobilitas vertikal ke atas mempunyai 2 bentuk yang utama, yaitu : </p><p>• Masuk dalam kedudukan yang lebih tinggi</p><p>• Membuat atau membentuk kelompok baru</p><p>Contohnya : </p><p>Pembentukan organisasi baru seperti OSIS tahun ajaran baru yang dilakukan setiap sekolah, memungkinkan seseorang untuk menjadi ketua dari organisasi tersebut, yang dapat meningkatkan status sosialnya.</p><p></p><p>semoga membantu ♥️</p><p><strong>Jawaban:</strong></p><p>1.      Pendiri dan CEO perusahaan transportasi berbasis teknologi daring yaitu Gojek bernama Nadiem Makarim. Pada pertengahan tahun 2016, perusahaan Gojek dilaporkan telah bernilai Rp17 triliun. Selain pendiri perusahaan Gojek, lulusan sekolah bisnis dari Harvard yang memulai karirnya sebagai konsultan manajemen pada perusahaan terkemuka Amerika yang bernama McKinsey &amp; Company ini merupakan pendiri situs belanja daring, yaitu Zalora Indonesia.</p><p>2.      Andrea Hirata merupakan seorang novelis berkebangsaan Indonesia yang tumbuh dengan latar belakang keluarga miskin. Namun latar belakang keluarga yang miskin tak pernah menyurutkan cita-citanya untuk meraih pendidikan tinggi. Dengan kerja keras dan ketekunannya, dia berhasil meraih gelar sarjana di bidang ekonomi dari Universitas Indonesia. Dia bahkan melanjutkan kuliahnya pada Universitas Paris atau sering juga disebut sebagai Universitas Sorbonne. Walaupun latar belakang pendidikannya adalah di bidang ekonomi, namun Andrea Hirata lebih aktif dalam dunia sastra dengan menelurkan beberapa buah novel yang sukses di pasaran. Kesuksesan novel Trilogi Laskar Pelangi karya Andrea Hirata bahkan diadaptasikan ke dalam layar lebaryang juga meraih sukses besar dalam dunia perfilman Indonesia.</p><p>3.      Cristiano Ronaldo merupakan pemain sepakbola asal Potugal yang bermain untuk klub Real Madrid. Rival utama Lionel Messi ini sebagai pemain terbaik dunia ini telah 4 kali meraih FIFA Balon d’Or yang merupakan penghargaan individu tertinggi dalam olahraga sepakbola. Kesuksesannya sebagai pemain sepakbola merupakan buah dari kerja kerasnya yang semenjak dini. Ronaldo dilahirkan dari keluarga sederhana dimana ibunya bekerja sebagai tukang masak, sedangkan ayahnya bekerja sebagai tukang kebun.</p><p>4.      Sudono Halim atau Liem Sioe Liong merupakan pengusaha terkemuka Indonesia. Dia merupakan pendiri Salim Group, yakni perusahaan konglomerat yang bergerak dalam berbagai bidang usaha. Dia memulai bisnisnya dari kecil di kota Kudus, Jawa Tengah dalam bidang tembakau dan cengkeh sebagai bahan baku pembuatan rokok.</p><p>5.      Menteri Kelautan dan Perikanan Indonesia ke-6 dijabat oleh Ibu Susi Pudjiastuti. Sebelum menjadi menteri, Susi Pudjiastuti merupakan pengusaha di bidang perikanan dan penerbangan. Dia memulai usahanya dari bawah sejak usia dini setelah keluar dari pendidikan SMA-nya.</p><p></p><p></p><strong>J</strong><strong>A</strong><strong>D</strong><strong>I</strong><strong>K</strong><strong>A</strong><strong>N</strong><strong> </strong><strong>Y</strong><strong>G</strong><strong> </strong><strong>T</strong><strong>E</strong><strong>R</strong><strong>B</strong><strong>A</strong><strong>I</strong><strong>K</strong><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-contoh-social-climbing-5">
+                            8. sebutkan contoh social climbing (5) :) </h2><br />
+                        A adalah seorang guru sejarah di salah satu SMAkarena memenuhi persyaratan dia diangkat menjadi kepala sekolah.<br />Pembentukan organisasi baru memungkinkan seseorang menjadi ketua dari organisasi baru tersebut sehingga status sosialnya naik.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-mobilitas-vertikal-climbing%e2%80%8b">
+                            9. contoh mobilitas vertikal climbing​</h2><br />
+                        <p><strong>Penjelasan:</strong></p><p>Masuknya individu-individu yang mempunyai kedudukan rendah ke dalam kedudukan yang lebih tinggi, Contoh Mobilitas Vertikal Naik adalah sebelumnya sebagai camat, kemudian jadi wali kota. – Pembentukan suatu kelompok baru yang kemudian ditempatkan pada derajat yang lebih tinggi</p><p><strong>Jawaban:</strong></p><p>Contoh: </p><p>a. seorang camat diangkat menjadi bupati.</p><p>b. Pembentukan organisasi baru memungkinkan seseorang untuk menjadi ketua dari organisasi baru tersebut, sehingga status sosialnya naik. </p><p>c. Tukang becak menjadi supir presiden</p><p>d. anak petani menjadi dokter.</p><p><strong>Penjelasan:</strong></p><p> </p><p>Menurut soerjono soekanto gerak sosial mobility adalah suatu gerak dalam struktur sosial yaitu pola-pola tertentu yang mengatur organisasi suatu kelompok sosial.</p><p></p><p>B. Bentuk-bentuk mobilitas sosial </p><p>Dilihat dari arah pergerakannya terdapat dua bentuk mobilitas sosial , yaitu mobilitas sosial vertikal dan mobilitas sosial horizontal. Mobilitas social vertical dapat dibedakan lagi menjadi social sinking dan social climbing. Sedangkan mobilitas horizontal dibedakan menjadi mobilitas social antarwilayah (geografis) dan mobilitas antargenerasi.</p><p>Yang akan kita bahas hanya mobilitas sosial vertikal saja, sebagai berikut: </p><p></p><p>1. Mobilitas vertikal</p><p>Mobilitas Vertikal adalah perpindahan status sosial yang dialami seseorang atau sekelompok orang pada lapisan sosial yang berbeda. Mobilitas vertikal terdiri dari dari:</p><p>a. Mobilitas vertical ke atas (Sosial Climbing)</p><p>Sosial climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang</p><p>Sosial climbing memiliki dua bentuk, yaitu :</p><p>Naiknya orang-orang berstatus sosial rendah ke status sosial yang lebih tinggi, dimana status itu telah tersedia. Contoh: seorang camat diangkat menjadi bupati.</p><p>Terbentuknya suatu kelompok baru yang lebih tinggi dari pada lapisan sosial yang sudah ada. Contoh: Pembentukan organisasi baru memungkinkan seseorang untuk menjadi ketua dari organisasi baru tersebut, sehingga status sosialnya naik. </p><p></p><p>b. Mobilitas vertikal ke bawah (Social sinking)</p><p>Sosial sinking merupakan proses penurunan status atau kedudukan seseorang. </p><p></p><p>Social sinking dibedakan menjadi dua bentuk :</p><p>Turunnya kedudukan seseorang ke kedudukan lebih rendah. Contoh: seorang prajurit dipecat karena melakukan tidakan pelanggaran berat ketika melaksanakan tugasnya. </p><p>Tidak dihargainya lagi suatu kedudukan sebagai lapisan sosial.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbingsocial-singking">
+                            10. contoh social climbing/social singking</h2><br />
+                        Menjual aset/barang berharga untuk berfoya-foya dengan teman agar terkenal dan dianggap akrab<br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing%e2%80%8b">
+                            11. contoh social climbing​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>-karyawan perusahaan diangkat menjadi staf direksi</p><p>-anggota polisi yang diangkat menjadi kapolda</p><p>-bapak rudi  yang awlanya guru biasa diangkat menjadi kepala sekolah</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><p></p><p><strong>Jawaban:</strong></p><p>-Diangkatnya seorang guru menjadi Kepala Sekolah</p><p>-Terpilihnya seorang warga menjadi Kepala Desa</p><p></p><p>semoga membantu:)</p><p>tetap semangatt yaa!!</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing">
+                            12. contoh social climbing</h2><br />
+                        1<br /><br />Sekolah Menengah PertamaIps5 poin<br /><br />5 contoh Social Climbing <br />5 contoh Social Sinking<br />5 contoh mobilitas sosial horizontal<br /><br />Tanyakan detil pertanyaan Ikuti tidak puas? sampaikan!dari Alyssafirdaus07 24.10.2017<br /><br />Jawabanmu<br /><br />￼<br /><br />dodysjk Ambisius<br /><br />Mapel : IPS / Sosiologi<br /><br />Kelas : VIII SMP<br /><br />Kategori : Mobilitas Sosial<br /><br />Kata kunci : Status sosial, perpindahan sosial, stratifikasi sosial<br /><br /><br />5 contoh social climbing, antara lain:<br /><br />1.      Pendiri dan CEO perusahaan transportasi berbasis teknologi daring yaitu Gojek bernama Nadiem Makarim. Pada pertengahan tahun 2016, perusahaan Gojek dilaporkan telah bernilai Rp17 triliun. Selain pendiri perusahaan Gojek, lulusan sekolah bisnis dari Harvard yang memulai karirnya sebagai konsultan manajemen pada perusahaan terkemuka Amerika yang bernama McKinsey &amp; Company ini merupakan pendiri situs belanja daring, yaitu Zalora Indonesia.<br /><br />2.      Andrea Hirata merupakan seorang novelis berkebangsaan Indonesia yang tumbuh dengan latar belakang keluarga miskin. Namun latar belakang keluarga yang miskin tak pernah menyurutkan cita-citanya untuk meraih pendidikan tinggi. Dengan kerja keras dan ketekunannya, dia berhasil meraih gelar sarjana di bidang ekonomi dari Universitas Indonesia. Dia bahkan melanjutkan kuliahnya pada Universitas Paris atau sering juga disebut sebagai Universitas Sorbonne. Walaupun latar belakang pendidikannya adalah di bidang ekonomi, namun Andrea Hirata lebih aktif dalam dunia sastra dengan menelurkan beberapa buah novel yang sukses di pasaran. Kesuksesan novel Trilogi Laskar Pelangi karya Andrea Hirata bahkan diadaptasikan ke dalam layar lebaryang juga meraih sukses besar dalam dunia perfilman Indonesia.<br /><br />3.      Cristiano Ronaldo merupakan pemain sepakbola asal Potugal yang bermain untuk klub Real Madrid. Rival utama Lionel Messi ini sebagai pemain terbaik dunia ini telah 4 kali meraih FIFA Balon d’Or yang merupakan penghargaan individu tertinggi dalam olahraga sepakbola. Kesuksesannya sebagai pemain sepakbola merupakan buah dari kerja kerasnya yang semenjak dini. Ronaldo dilahirkan dari keluarga sederhana dimana ibunya bekerja sebagai tukang masak, sedangkan ayahnya bekerja sebagai tukang kebun.sosial climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang atau naiknya orang - orang berstatus sosial rendah ke status sosial yang lebih tinggi. <br />thanks<br /> semoga bisa membantu ;)))<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-antara-mobilitas-sosial-sinking-dengan-mobilitas-sosial-climbing-disertai-contohnya%e2%80%8b">
+                            13. jelaskan Perbedaan antara Mobilitas Sosial sinking dengan mobilitas sosial climbing disertai contohnya!​</h2><br />
+                        <p>Jawaban:</p><p>-Mobilitas Sosial Climbing : mobilitas yang terjadi karena adanya peningkatan status kedudukan seseorang. </p><p>Contoh : Pak Sugio adalah seorang guru sejarah di suatu SMA. Karena memenuhi persyaratan, ia diangkat menjadi kepala sekolah di SMA tersebut. </p><p>-Mobilitas Sosial Sinking : mobilitas yang terjadi karena adanya penurunan status atau kedudukan seseorang. </p><p>Contoh : seorang prajurit dipecat karena melakukan tindakan pelanggaran berat ketika melaksanakan tugasnya. </p><p></p><p>Penjelasan:</p><p>Semoga membantu✨</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-ini-yang-merupakan-contoh-social-climbing-adalah">
+                            14. Berikut ini yang merupakan contoh social climbing adalah</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Pengusaha restoran yang berawal dari ruko kecil lama-kelamaan sukses dan mempunyai cabang di mana-man</strong><strong>a</strong></p><p><strong>Penjelasan:</strong></p><p>Semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="contoh-crita-sosial-climbing">
+                            15. contoh crita sosial climbing</h2><br />
+                        Ada seorang pegawai dia sangat rajin mengerjakan tugas karena dia rajin dia diangkat jadi manager di perusahaan itu<br />
+                                            <h2 class="ez-toc-section" id="contohmobilitas-geografis-climbing%e2%80%8b">
+                            16. contohmobilitas geografis climbing​</h2><br />
+                        <p>contohnya: </p><p>a.) seorang camat di angkat menjadi bupati</p><p>b.) supir bis menjadi supir presiden</p><p>c.) anak petani menjadi anggota DPR</p><p></p><p>semoga membantu:)</p><p>Geografis climbing : </p><p>- seorang karyawan biasa di sebuah perusahaan naik pangkat menjadi manager. </p><p>- guru sekolah dasar yang diangkat menjadi kepala sekolah.
+</p><p><strong>Semoga Membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="berikan-2-contoh-kasus-mobilitas-vertical-climbing-antargenerasi-tolong-bantu-jawab-kaksoalnya-besok-dikumpulinmakasih%e2%80%8b">
+                            17. Berikan 2 contoh kasus mobilitas vertical climbing antargenerasi tolong bantu jawab kaksoalnya besok dikumpulinmakasih​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut ini 3 contoh kasus mobilitas sosial dengan ketentuan masing-masing sebanyak 2 paragraf:</p><p></p><p>                                                  Contoh I</p><p></p><p>Pak Raka adalah guru yang sangat berdedikasi. Tak sekedar menjadi pengajar di kelas, ia juga berkomitmen memajukan sekolah dengan mengelola kebun sekolah bersama siswa. Kebun tersebut sangat terawat dan tanamannya dijaga dengan baik. Kerja keras Pak Raka dan siswa-siswanya membuahkan hasil saat kebun panen dan hasilnya dijual dan dibagi-bagikan.</p><p></p><p>Melihat prestasi Pak Raka, ia pun direkomendasikan untuk naik jabatan walau usianya masih muda. Ia diangkat sebagai kepala sekolah di usia 25 tahun. Saat menjabat sebagai Kepala Sekolah, Pak Raka tetap sosok yang sama, peduli pada lingkungan sekolah (ini contoh mobilitas sosial positif atau mobilitas vertikal ke atas).</p><p></p><p>                                                   Contoh II</p><p></p><p>Bu Rani seorang pengusaha lele yang sangat sukses. Kesuksesannya banyak membuat iri orang-orang. Suatu hari, Bu Rani memutuskan untuk ikut menggeluti bisnis lain yang menurutnya akan mendatangkan keuntungan lebih besar lagi. Bisnis tersebut berkaitan dengan barang tambang. Bu Rani fokus pada bisnis barang tambangnya dan menyerahkan bisnis lelenya dikelola orang lain.</p><p></p><p>Namun tahun berganti tahun, keuntungan bisnis barang tambang yang diimpikan Bu Rani tak kunjung terwujud. Malah modalnya sudah hampir habis dan bisa di bilang di ambang kebangkrutan. Masalah ini diperparah bisnis Bu Rani yang juga merosot karena dikelola orang yang tidak kompeten. Alhasil, Bu Rani harus kembali ke titik nol (ini contoh mobilitas sosial negatif atau mobilitas vertikal ke bawah).</p><p></p><p>                                                    Contoh III</p><p></p><p>Keluarga Andita tinggal di sebuah desa bernama Keranggi. Desa ini amat indah juga tanahnya subur sehingga hampir semua masyarakatnya bekerja sebagai petani. Sayangnya, Desa Keranggi berada di dekat gunung berapi yang masih aktif. Gunung ini bahkan setahun dua kali selalu berstatus awas. Meski begitu, masyarakat di desa Keranggi masih banyak yang memilih untuk bertahan.</p><p></p><p>Hal yang berbeda terjadi pada keluarga Andita. Ia, ayah, ibu dan adiknya memilih untuk pindah ke desa sebelah bernama Meranti. Alasannya karena mereka khawatir gunung berapi tersebut meletus sewaktu-waktu. Selain itu, orang tua Andita juga tak bekerja sebagai petani. Jadi bukan perkara besar jika mereka pindah ke desa lain (ini contoh mobilitas sosial horizontal).</p><p></p><p>Pembahasan</p><p>Dalam konteks sosiologi, yang dimaksud dengan mobilitas sosial adalah gerak perpindahan dari kelas sosial satu ke kelas sosial lainnya karena berbagai alasan. Mobilitas sosial ini dibagi menjadi dua yakni:</p><p></p><p>Mobilitas vertikal, jenis ini dibagi lagi jadi dua yakni vertikal ke atas (positif) dan vertikal ke bawah (negatif).</p><p>Mobilitas horizontal.</p><p>Pelajari Lebih Lanjut</p><p>Materi tentang apa yang dimaksud dengan mobilitas sosial brainly.co.id/tugas/32542962</p><p>Materi tentang apa yang dimaksud dengan social climbing dan social sinking brainly.co.id/tugas/13703858</p><p>Materi tentang bentuk bentuk mobilitas sosial </p><p><strong>Penjelasan:</strong></p><p></p><p><strong>A</strong><strong>k</strong><strong>u</strong><strong> </strong><strong>K</strong><strong>s</strong><strong>i</strong><strong>h</strong><strong> </strong><strong>3</strong><strong> </strong><strong>Y</strong><strong>a</strong><strong>h</strong></p><p></p><p><strong></strong><strong></strong><strong></strong><strong> </strong><strong></strong><strong></strong><strong></strong><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-mobilitas-sosial-climbing%e2%80%8b">
+                            18. contoh mobilitas sosial climbing​</h2><br />
+                        <p>Mobilitas sosial climbing adalah istilah yang digunakan untuk menggambarkan perubahan posisi sosial seseorang dari kelas sosial yang rendah ke kelas sosial yang lebih tinggi dalam masyarakat. Berikut adalah beberapa contoh mobilitas sosial climbing:</p><p></p><p>1. Seorang individu yang berasal dari latar belakang ekonomi yang rendah dan memiliki akses terbatas terhadap pendidikan, namun dengan kerja keras dan kesempatan yang baik, berhasil meraih gelar sarjana dan mendapatkan pekerjaan yang lebih baik di bidang profesional. Hal ini mengangkatnya ke kelas sosial yang lebih tinggi.</p><p></p><p>2. Seorang pekerja yang memulai karirnya sebagai buruh pabrik, namun melalui keahlian dan pengalaman kerja yang terus berkembang, ia berhasil naik ke posisi manajerial atau menjadi pemilik usaha.</p><p></p><p>3. Seorang atlet atau seniman yang berasal dari latar belakang yang kurang mampu, tetapi dengan bakat dan kerja keras, berhasil mencapai kesuksesan dan mendapatkan pengakuan internasional. Hal ini membuka peluang untuk meningkatkan status sosial dan ekonomi mereka.</p><p></p><p>4. Seorang individu yang berasal dari keluarga petani miskin, tetapi dengan pendidikan yang baik dan kemampuan berwirausaha yang kuat, berhasil membangun bisnis yang sukses dan meningkatkan taraf hidup keluarganya.</p><p></p><p>5. Seorang imigran yang datang ke negara baru dengan modal yang terbatas, tetapi melalui kerja keras, belajar bahasa dan budaya lokal, serta memanfaatkan kesempatan yang ada, mereka berhasil membangun usaha yang sukses dan mencapai keberhasilan ekonomi yang lebih baik.</p><p></p><p>Perlu diingat bahwa mobilitas sosial climbing tidak selalu terjadi dalam setiap situasi atau masyarakat. Hal ini tergantung pada faktor-faktor seperti kesempatan, akses ke pendidikan, keterampilan individu, dan lingkungan sosial yang memungkinkan perubahan status sosial.</p><br />
+                                            <h2 class="ez-toc-section" id="berilah-3-contoh-social-climbing">
+                            19. Berilah 3 contoh social climbing</h2><br />
+                        Social climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang. <br /><br />Contoh  sosial climbing :<br />1. Seorang camat yang diangkat menjadi bupati.<br />2. Seorang guru yang diangkat menjadi kepala sekolah.<br />3. Seorang tentara mulanya berpangkat sersan  kemudian naik menjadi letnan.<br /><br />Semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-dari-sosial-climbing-beserta-contoh-nya">
+                            20. Jelaskan pengertian Dari sosial climbing beserta contoh nya</h2><br />
+                        Jawaban Ada di atas (Foto)<br /><br />- Semoga Membantu - <br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing%e2%80%8b">
+                            21. contoh social climbing​</h2><br />
+                        <p>Social climbing adalah kenaikan kelas sosial keatas atau menuju pangkat yang lebih tinggi. Contohnya adalah sebagai berikut :</p><p></p><p>- Berawal dari keluarga miskin, Edo berhasil menjadi seorang direktur di perusahaan terkemuka di Indonesia. Ia berhasil mengangkat status sosial keluarganya.</p><p></p><p>- Karena usahanya, Bima yang awalnya hanyalah seorang staf berhasil diangkat menjadi pimpinan cabang perusahaan.</p><p></p><p>Semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-contoh-social-climbing">
+                            22. Apa saja contoh social climbing</h2><br />
+                        Contohnya yaitu Kegemaran sesorang memamerkan makanan berharga mahal atau barang yang berkelas di media sosialnya.<br /><br />Semoga bermanfaat<br />
+                                            <h2 class="ez-toc-section" id="carilah-contoh-social-climbing">
+                            23. carilah contoh social climbing</h2><br />
+                        social climbing adalah perubahan status seseorang dari rendah ke tinggi misalnya<br />Ibnu adalah seorang anak petani miskin yang sekarang menjadi kepala perusahaan pabrik pupuk yang terkenal . <br />social climbing: seorang karyawan biasa disebuah perusahaan naik pangkat menjadi manager.<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-dengan-disertai-contoh-mobilitas-sosial-naik-social-climbing-dan-mobilitas-turun-social-sinking">
+                            24. Jelaskan perbedaan dengan disertai contoh mobilitas sosial naik social climbing dan mobilitas turun social Sinking</h2><br />
+                        Mobilitas sosial naik (social climbing): kondisi di mana meningkatnya status sosial seseorang, dari kedudukan yang lebih rendah ke kedudukan yang lebih tinggi. Contoh: seorang Kepala Desa menjadi Kepala Camat.<br /><br />Mobilitas sosial turun (social sinking): kondisi di mana menurunnya status sosial seseorang, dari kedudukan yang lebih tinggi ke kedudukan yang lebih rendah. Contoh: seorang pegawai yang dipecat menjadi pengangguran.<br /><br />semoga puas dengan jawabannya.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing%e2%80%8b">
+                            25. contoh social climbing​</h2><br />
+                        <p>awalnya menjadi manajer penjualan dan kemudian ia menjadi direktur perusahaan karena kinerjanya yg baik.</p><p></p><p><strong>Jawaban:</strong></p><p>contoh ibu guru Daniar adalah seorang guru biasa di sebuah sekolah dan ia bekerja dgn ulet dan rajin sehingga di angkat mjd kepala sklh..</p><br />
+                                            <h2 class="ez-toc-section" id="2-bentuk-mobilitas-sosial-vertikal-naik-sosial-climbing-beserta-contohnya">
+                            26. 2 bentuk mobilitas sosial vertikal naik sosial climbing beserta contohnya</h2><br />
+                        Jawaban : 1. Seorang manajer menjadi pegawai kantor biasa<br />                 2. Seorang kepala sekolah menjadi guru biasa<br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-yang-berkaitan-dengan-mobilitas-vertikal-baik-yang-climbing-dan-sinking-dan-mobilitas-horizontal-beserta-barang-buktinya">
+                            27. Berikan contoh yang berkaitan dengan mobilitas vertikal baik yang climbing dan sinking dan mobilitas horizontal beserta barang buktinya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Social</strong><strong> </strong><strong>climbing</strong><strong> </strong></p><p><strong>contohnya</strong><strong> </strong><strong>yaitu</strong><strong>:</strong></p><p>seorang guru yang karena menaiki sarjana nya dan mencalon menjadi seorang PNS </p><p></p><p><strong>Social</strong><strong> </strong><strong>sinking</strong><strong>:</strong></p><p><strong>contohnya</strong><strong> </strong><strong>yaitu</strong><strong>:</strong></p><p>seorang kepala sekolah karna telah memasuki usia 60 thn dan akan pensiun , dan jabatan turun menjadi seorang warga biasa</p><p></p><p><strong>Horizontal</strong><strong>:</strong></p><p><strong>contohnya</strong><strong> </strong><strong>yaitu</strong><strong>:</strong></p><p>seorang guru karna dipindahkan ke wilayah lain dan, dan status guru tetap :) </p><p></p><p><strong>Penjelasan:</strong></p><p><strong>Mobilitas</strong><strong> </strong><strong>sosial</strong><strong> </strong><strong>Vertikal</strong><strong> </strong><strong>Ke</strong><strong> </strong><strong>Atas</strong><strong> </strong><strong>(</strong><strong>Social</strong><strong> </strong><strong>Climbing</strong><strong>)</strong><strong> </strong></p><p><strong>adalah</strong><strong> </strong>mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seorang atau naiknya orang-orang berstatus sosial rendah ke status sosial yang lebih tinggi :)</p><p></p><p>capek :(</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing">
+                            28. Contoh social climbing.... </h2><br />
+                        <p>contoh</p><p>1. Seorang pegawai rendahan, karena keberhasilan dan prestasinya diberikan kenaikan pangkat menjadi Menejer, sehingga tingkat pendapatannya naik</p><p>2. Seseorang wanita yang berasal dari keluarga sangat sederhana menikah dengan laki-laki dari keluarga kaya dan terpandang di masyarakatnya. Perkawinan ini dapat menaikan status seorang wanita tersebut.</p><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-mobilitas-sosial-vertikal-climbing%e2%80%8b">
+                            29. contoh mobilitas sosial vertikal climbing​</h2><br />
+                        <p>Jawaban:</p><p></p><p>Penjelasan:seorang pegaway Yang Di naikan pangkatnya kepangkat Yang lebih tinggi lagi Karena kegigihannya Dalam berkerja</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-sosial-climbing-dan-sosial-sinking">
+                            30. Contoh sosial climbing dan sosial sinking</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Contoh social climbing</strong>, yaitu seorang warga biasa diangkat menjadi ketua RT, seorang guru diangkat menjadi kepala sekolah, dan sebagainya.</p><p></p><p><strong>C</strong><strong>ontoh social sinking</strong><strong>,</strong><strong> </strong>Kepala Dinas Pertanian Provinsi dipindah tugaskan menjadi Kepala Dinas Kabupaten/Kota, Kepala sekolah SMA negeri menjadi guru SMA biasa, Sebuah kapten sepakbola menjadi pemain sepakbola biasa.</p><p></p><p><strong>[</strong><strong>semoga</strong><strong> membantu</strong><strong> jadikan</strong><strong> jawaban</strong><strong> terbaik</strong><strong> ya</strong><strong>!</strong><strong>]</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-contoh-social-climbing-dan-social-sinking-beserta-namanyamasing-masing-disebutkan-5-contohnya">
+                            31. sebutkan contoh social climbing dan social sinking beserta namanya?masing masing disebutkan 5 contohnya!</h2><br />
+                        <p>5 contoh social climbing, antara lain:</p><br /><p>1.      Pendiri</p><p>dan CEO perusahaan transportasi berbasis teknologi daring yaitu Gojek bernama</p><p>Nadiem Makarim. Pada pertengahan tahun 2016, perusahaan Gojek dilaporkan telah</p><p>bernilai Rp17 triliun. Selain pendiri perusahaan Gojek, lulusan sekolah bisnis</p><p>dari Harvard yang memulai karirnya sebagai konsultan manajemen pada perusahaan</p><p>terkemuka Amerika yang bernama McKinsey &amp; Company ini merupakan pendiri situs</p><p>belanja daring, yaitu Zalora Indonesia.</p><br /><p>2.      Andrea</p><p>Hirata merupakan seorang novelis berkebangsaan Indonesia yang tumbuh dengan latar</p><p>belakang keluarga miskin. Namun latar belakang keluarga yang miskin tak pernah</p><p>menyurutkan cita-citanya untuk meraih pendidikan tinggi. Dengan kerja keras dan</p><p>ketekunannya, dia berhasil meraih gelar sarjana di bidang ekonomi dari</p><p>Universitas Indonesia. Dia bahkan melanjutkan kuliahnya pada Universitas Paris</p><p>atau sering juga disebut sebagai Universitas Sorbonne. Walaupun latar belakang</p><p>pendidikannya adalah di bidang ekonomi, namun Andrea Hirata lebih aktif dalam</p><p>dunia sastra dengan menelurkan beberapa buah novel yang sukses di pasaran. Kesuksesan</p><p>novel Trilogi Laskar Pelangi karya Andrea Hirata bahkan diadaptasikan ke dalam</p><p>layar lebaryang juga meraih sukses besar dalam dunia perfilman Indonesia.</p><br /><p>3.      Cristiano</p><p>Ronaldo merupakan pemain sepakbola asal Potugal yang bermain untuk klub Real</p><p>Madrid. Rival utama Lionel Messi ini sebagai pemain terbaik dunia ini telah 4</p><p>kali meraih FIFA Balon d’Or yang merupakan penghargaan individu tertinggi dalam</p><p>olahraga sepakbola. Kesuksesannya sebagai pemain sepakbola merupakan buah dari</p><p>kerja kerasnya yang semenjak dini. Ronaldo dilahirkan dari keluarga sederhana</p><p>dimana ibunya bekerja sebagai tukang masak, sedangkan ayahnya bekerja sebagai</p><p>tukang kebun.</p><br /><p>4.      Sudono</p><p>Halim atau Liem Sioe Liong merupakan pengusaha terkemuka Indonesia. Dia</p><p>merupakan pendiri Salim Group, yakni perusahaan konglomerat yang bergerak dalam</p><p>berbagai bidang usaha. Dia memulai bisnisnya dari kecil di kota Kudus, Jawa</p><p>Tengah dalam bidang tembakau dan cengkeh sebagai bahan baku pembuatan rokok.</p><br /><p>5.      Menteri</p><p>Kelautan dan Perikanan Indonesia ke-6 dijabat oleh Ibu Susi Pudjiastuti.</p><p>Sebelum menjadi menteri, Susi Pudjiastuti merupakan pengusaha di bidang</p><p>perikanan dan penerbangan. Dia memulai usahanya dari bawah sejak usia dini</p><p>setelah keluar dari pendidikan SMA-nya.</p><p>Social climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang. </p><br /><br />social climbing adalah mobilitas sosial vertikal naik, jika social sinking mobilitas sosial vertikal turun<br />contoh climbing, guru honorer pindah sekolah tapi tetap menjadi guru honorer<br />contoh sinking, kepala sekolah turun jabatan karena habis masa nya jadi pensiun....<br />
+                                            <h2 class="ez-toc-section" id="berikan-5-contoh-sosial-climbing-dan-sinkingtolong-di-jawab">
+                            32. berikan 5 contoh sosial climbing dan sinking#tolong di jawab</h2><br />
+                        sosial climbing<br />dari rangking 2 jadi rangking 1<br />dari ob jadi komedian<br />dari SD ke SMP <br />dari karyawan jadi manager <br />dari pelayan restoran jadi pemilik restoran<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing-dan-social-singking%e2%80%8b">
+                            33. contoh social climbing dan social singking​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>social climbing:</p><p>- anggota polisi yg diangkat menjadi kapolda</p><p>social singking</p><p>- kepala dusun yg turun pangkat menjadi warga biasa</p><p><strong>Penjelasan:</strong></p><p>semoga membantu ^_^</p><p><strong>Jawaban:</strong></p><p>Social Climbing:Anak petani lulusan sd berhasil menyelesaikan pendidikan S2 di prancis.</p><p></p><p>Social Singking:Kepala sekolah yang turun pangkat menjadi warga biasa.</p><p></p><p><strong>Penjelasan:</strong></p><p>Maaf kalo salah :)</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing-dan-faktornya%e2%80%8b">
+                            34. contoh social climbing dan faktornya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sosial climbing naik : dari seorang Guru menjadi kepala sekolah</p><p>sosial climbing turun : seorang karyawan yang sedang di phk sehingga tidak punya pekerjaan</p><p><strong>Penjelasan:</strong></p><p>karena sosial climbing naik berarti perpindahan kedudukan seseorang ke kedudukan yang lebih tinggi</p><p>sedangkan sosial climbing turun adalah perpindahan kedudukan seseorang ke kedudukan yang lebih rendah</p><p></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-contoh-sosial-climbing%e2%80%8b">
+                            35. sebutkan contoh sosial climbing​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Guru mata pelajaran diangkat menjadi Kepala Sekolah.</p><p>Seorang karyawan biasa diangkat menjadi manager.</p><p>Tentara yang pangkatnya sersan kemudian diangkat menjadi letnan.</p><p></p><p></p><strong> Bapak Yanto yang awalnya warga biasa diangkat menjadi Pak RT</strong><p></p><strong> Bapak Eko yang awalnya guru biasa diangkat menjadi kepala sekolah</strong><p></p><strong> Karyawan perusahaan diangkat menjadi staf direksi</strong><p></p><strong>Anggota polisi yang diangkat menjadi Kapolda</strong><br />
+                                            <h2 class="ez-toc-section" id="contoh-terjadinya-sosial-climbing">
+                            36. Contoh terjadinya sosial climbing </h2><br />
+                        pembentukan kelompok baru memungkinkan individu untuk meningkatkan status sosialnya<br />contoh : pembentukan organisasi baru yg memungkinkan seseorang bisa menjadi ketua dr organisasi tsb<br />
+                                            <h2 class="ez-toc-section" id="contoh-sosial-climbing-dan-sosial-sinking">
+                            37. Contoh sosial climbing dan sosial sinking</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Pengertian Social climbing</strong> adalah perpindahan kedudukan dari posisi yang rendah ke tinggi atau disebut juga mobilitas vertikal ke atas.</p><p></p><p><strong>Contoh Social climbing:</strong></p><p></p><p>Diangkatnya seorang guru menjadi Kepala Sekolah</p><p>Terpilihnya seorang warga menjadi Kepala Desa.</p><p></p><p><strong>Pangertian Social Sinking </strong>adalah penurunan status seseorang, yaitu dari level tinggi ke rendah atau mobilitas vertikal ke bawah.</p><p></p><p><strong>Contoh Social Sinking:</strong></p><p></p><p>Diturunkannya jabatan seorang menjadi karyawan biasa</p><p>Dipecatnya seseorang karena kelalaiannya dalam bekerja</p><p><strong>Penjelasan:</strong></p><p>semoga bermanfaat ya</p><p>jadikan jawaban tercerdas</p><p>see you later</p><p>sosial climbing</p><p> 1.<strong>a</strong><strong>n</strong><strong>a</strong><strong>k</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>t</strong><strong>a</strong><strong>n</strong><strong>i</strong><strong> </strong><strong>l</strong><strong>u</strong><strong>l</strong><strong>u</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>s</strong><strong>d</strong><strong> </strong><strong>b</strong><strong>e</strong><strong>r</strong><strong>h</strong><strong>a</strong><strong>s</strong><strong>i</strong><strong>l</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>y</strong><strong>e</strong><strong>l</strong><strong>e</strong><strong>s</strong><strong>a</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>n</strong><strong>d</strong><strong>i</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>s</strong><strong>2</strong><strong> </strong><strong>d</strong><strong>i</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>r</strong><strong>a</strong><strong>n</strong><strong>c</strong><strong>i</strong><strong>s</strong></p><p></p><p><strong>b</strong><strong>a</strong><strong>p</strong><strong>a</strong><strong>k</strong><strong> </strong><strong>y</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>o</strong><strong> </strong><strong>y</strong><strong>g</strong><strong> </strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>l</strong><strong>n</strong><strong>n</strong><strong>y</strong><strong>a</strong><strong> </strong><strong>w</strong><strong>a</strong><strong>r</strong><strong>g</strong><strong>a</strong><strong> </strong><strong>b</strong><strong>i</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong> </strong><strong>d</strong><strong>i</strong><strong>a</strong><strong>n</strong><strong>g</strong><strong>k</strong><strong>a</strong><strong>t</strong><strong> </strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong> </strong><strong>p</strong><strong>a</strong><strong>k</strong><strong> </strong><strong>r</strong><strong>t</strong><strong> </strong></p><p></p><p><strong>y</strong><strong>g</strong><strong> </strong><strong>d</strong><strong>i</strong><strong>m</strong><strong>a</strong><strong>k</strong><strong>s</strong><strong>u</strong><strong>d</strong><strong> </strong><strong>d</strong><strong>e</strong><strong>n</strong><strong>g</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>s</strong><strong>o</strong><strong>s</strong><strong>i</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>c</strong><strong>l</strong><strong>i</strong><strong>m</strong><strong>b</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong> </strong></p><p><strong>SOCIAL CLIMBING, adalah gerak mobilitas sosial secara vertikal yang a</strong></p><p><strong>rah gerakannya ke atas. Artinya kedudukan sosial seseorang mengalami kenaikan dari kedudukan sosial rendah ke kedudukan sosial yang lebih tinggi. </strong></p><p></p><p></p><p><strong>s</strong><strong>o</strong><strong>s</strong><strong>i</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>s</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong>k</strong><strong>i</strong><strong>n</strong><strong>g</strong></p><p><strong>1</strong><strong>.</strong><strong>Kepala Dinas Pertanian Provinsi dipindah tugaskan menjadi Kepala Dinas Kabupaten/Kota.</strong></p><p></p><p><strong>2</strong><strong>.</strong><strong>Kepala sekolah SMA negeri menjadi guru SMA biasa.</strong></p><p></p><p><strong>3</strong><strong>.</strong><strong>Sebuah kapten sepakbola menjadi pemain sepakbola biasa.</strong></p><p></p><p><strong>y</strong><strong>g</strong><strong> </strong><strong>d</strong><strong>i</strong><strong>m</strong><strong>a</strong><strong>k</strong><strong>s</strong><strong>u</strong><strong>d</strong><strong> </strong><strong>d</strong><strong>e</strong><strong>n</strong><strong>g</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>s</strong><strong>o</strong><strong>s</strong><strong>i</strong><strong>a</strong><strong>l</strong><strong> </strong><strong>s</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong>k</strong><strong>i</strong><strong>n</strong><strong>g</strong></p><p><strong>Sosial sinking merupakan proses penurunan status atau kedudukan seseorang. Proses sosial sinking sering kali menimbulkan gejolak psikis bagi seseorang karena ada perubahan.</strong></p><p></p><p></p><p><strong>j</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>b</strong><strong>a</strong><strong>i</strong><strong>k</strong></p><p><strong>n</strong><strong>a</strong><strong>n</strong><strong>t</strong><strong>i</strong><strong> </strong><strong>g</strong><strong>u</strong><strong>a</strong><strong> </strong><strong>f</strong><strong>o</strong><strong>l</strong><strong>l</strong><strong>o</strong><strong>w</strong></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-social-climbing-dari-faktor-struktural%e2%80%8b">
+                            38. Contoh social climbing dari Faktor Struktural​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Mobilitas vertical ke atas (Sosial Climbing) Sosial climbing adalah mobilitas yang terjadi karena adanya peningkatan status atau kedudukan seseorang. Sosial climbing memiliki dua bentuk, yaitu :</p><p></p><p>Naiknya orang-orang berstatus sosial rendah ke status sosial yang lebih tinggi, dimana status itu telah tersedia. <strong>Contoh: A adalah seorang guru sejarah di salah satu SMA. Karena memenuhi persyaratan, ia diangkat menjadi kepala sekolah.</strong></p><p></p><p>Terbentuknya suatu kelompok baru yang lebih tinggi dari pada lapisan sosial yang sudah ada. <strong>Contoh: Pembentukan organisasi baru memungkinkan seseorang untuk menjadi ketua dari organisasi baru tersebut, sehingga status sosialnya naik.</strong></p><p></p><p>Adapun penyebab sosial climbing adalah sebagai berikut :</p><p></p><p>1) Melakukan peningkatan prestasi kerja</p><p></p><p>2) Menggantikan kedudukan yang kosong akibat adanya proses peralihan generasi</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-mobilitas-climbing">
+                            39. Contoh kasus mobilitas climbing</h2><br />
+                        Seseorang yang asalnya merupakan pegawai kantor biasa, lalu karena gigih berusaha dan rajin bekerja, akhirnya ia naik jabatan menjadi direktur di kantor tersebut. <br /><br />moga nge-bantu yaa<br />
+                                            <h2 class="ez-toc-section" id="soaljelaskan-perbedaan-sosial-climbing-dan-sosial-sinking-berikan-masing-masing-contohnya">
+                            40. SOAL:
+Jelaskan perbedaan sosial climbing dan sosial sinking? Berikan masing-masing contohnya!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>social climbing (mobilitas naik) akan meningkatkan status sosial seseorang dari kedudukan yang lebih rendah ke kedudukan yang lebih tinggi.</p><p>contohnya : seorang pekerja yang mendapatkan promosi jabatan menjadi supervisor/manager</p><p></p><p></p><p>social sinking (mobilitas turun) akan menurunkan status sosial seseorang dari kedudukan yang lebih tinggi ke kedudukan yang lebih rendah.</p><p>contohnya : seorang pekerja yang dipecat dari jabatanya</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/AX4tLChiJWI?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-butir-soal-pg-teks-eksplanasi-hots-bahasa-indonesia-smp.html">Contoh Butir Soal Pg Teks Eksplanasi Hots Bahasa Indonesia Smp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-bahasa-inggris-smk-tentang-giving-hotel-informations.html">Soal Bahasa Inggris Smk Tentang Giving Hotel Informations</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-soal-mengidentifikasi-informasi-tersurat-beserta-pembahasannya.html">Contoh Soal Mengidentifikasi Informasi Tersurat Beserta Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-soal-vocabulary-bahasa-inggris-beserta-kunci-jawaban.html">Contoh Soal Vocabulary Bahasa Inggris Beserta Kunci Jawaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/naskah-soal-un-sma-ipa-bahasa-inggris-tahun-2016.html">Naskah Soal Un Sma Ipa Bahasa Inggris Tahun 2016</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-soal-describing-people-beserta-gambarnya.html">Contoh Soal Describing People Beserta Gambarnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-essay-dan-jawaban-bahasa-indonesia-kelas-12-semester-2.html">Soal Essay Dan Jawaban Bahasa Indonesia Kelas 12 Semester 2</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-soal-system-rem-beserta-jawabannya.html">Contoh Soal System Rem Beserta Jawabannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/prediksi-soal-usbn-bahasa-indonesia-sma-2020-besrta-pembahasannya.html">Prediksi Soal Usbn Bahasa Indonesia Sma 2020 Besrta Pembahasannya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-bahasa-indonesia-un-kesalahan-ejaan.html">Soal Bahasa Indonesia Un Kesalahan Ejaan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-bahasa-inggris-pilihan-ganda-kelas-7-dan-kunci-jawaban.html">Soal Bahasa Inggris Pilihan Ganda Kelas 7 Dan Kunci Jawaban</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/contoh-pda-akuntansi.html">Contoh Pda Akuntansi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-bahasa-indonesia-kelas-2-tentang-teks-buku-harian-keluarga.html">Soal Bahasa Indonesia Kelas 2 Tentang Teks Buku Harian Keluarga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/download-soal-umpn-bahasa-inggris.html">Download Soal Umpn Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/cara-menjawab-soal-un-bahasa-inggris-dengan-benar.html">Cara Menjawab Soal Un Bahasa Inggris Dengan Benar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-bahasa-indonesia-kelas-1-sd-tema-keluarga.html">Soal Bahasa Indonesia Kelas 1 Sd Tema Keluarga</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-soal-akuntansi-terbaru-untuk-sma.html">Soal soal Akuntansi Terbaru Untuk Sma</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-uts-bahasa-jawa-kls-2-semester-2-ktsp.html">Soal Uts Bahasa Jawa Kls 2 Semester 2 Ktsp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/soal-akuntansi-utang-dagang.html">Soal Akuntansi Utang Dagang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://referensisoal.github.io/kumpulan-soal-us-bahasa-inggris-kelas-6.html">Kumpulan Soal Us Bahasa Inggris Kelas 6</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://referensisoal.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://referensisoal.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://referensisoal.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://referensisoal.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://referensisoal.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
